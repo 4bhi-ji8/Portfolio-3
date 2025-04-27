@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-3.css">
+</head>
+<body>
+    <div class="parent-div">
+        <div class="child-header">
+            <header class="header-container">
+                <div>
+                    <h2 class="header-title">PORTFOLIO</h2>
+                </div>
+                <nav>
+                    <ul class="header-menu">
+                        <li>
+                            <a class="header-link" href="#about">About</a>
+                        </li>
+                        <li>
+                            <a class="header-link" href="#projects">Projects</a>
+                        </li>
+                        <li>
+                            <a class="header-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="child-section">
+            <section id="about">
+                <div>
+                    <img width="300" height="250" src="assets/Images/Profile.jpeg" alt="Profile picture">
+                </div>
+                <div class="about-para">
+                    <h3 class="about-title">Hi i am Abhijith &#x1F44B;</h3>
+                    <p>I am a web developer passionate about creating engaging user experiences.<br>Lorem ipsum dolor
+                        sit
+                        amet consectetur, adipisicing elit. Natus vitae quis neque error! Ipsum laborum voluptas odit
+                        tenetur, at eum cum. Officia nam quo totam eos officiis mollitia possimus adipisci?<br>Lorem
+                        ipsum
+                        dolor sit amet consectetur, adipisicing elit. Quibusdam architecto placeat blanditiis neque a
+                        consequatur aut recusandae, molestias quae quos amet facilis in minima quam excepturi officiis
+                        dolore quisquam dolores.</p>
+                </div>
+
+            </section>
+        </div>
+        <div class="child-section">
+            <section id="projects">
+                <div>
+                    <h3>Personal Portfolio</h3><br>
+                    <iframe style="border: 2px solid white;" width="400" height="300" src="project 1.html"
+                        frameborder="0"></iframe>
+                    <p>Creating your first portfolio might seem like a daunting task. I’ve put together a comprehensive
+                        guide to help budding UX designers create a portfolio that will showcase their unique stories.
+                    </p>
+                    <a class="project-link" id="project-link" href="project 1.html">Click here to visit </a>
+                </div><br><br>
+                <div>
+                    <h3>Restaurent website</h3><br>
+                    <iframe style="border: 2px solid white;" width="400" height="300" src="project 2.html"
+                        frameborder="0"></iframe>
+                    <p>The one page restaurant website template that you need to sell your foodThe one page restaurant
+                        website template that you need to sell your food</p>
+                    <a class="project-link" id="project-link" href="project 2.html">Click here to visit </a>
+                </div><br><br>
+                <div>
+                    <h3>Survey form</h3><br>
+                    <iframe style="border: 2px solid white;" width="400" height="300" src="project 3.html"
+                        frameborder="0"></iframe>
+                    <p>survey form online that you can easily customize and share</p>
+                    <a class="project-link" id="project-link" href="project 3.html">Click here to visit </a>
+                </div>
+            </section>
+        </div>
+        <div class="child-section">
+            <section id="contact" class="contact">
+                <h3>Contact</h3><br>
+                <form action="" method="post">
+                    <fieldset style="padding: 9px; border:none">
+                        <div>
+                            <label for="username">Name :</label>    
+                            <input type="text" id="username" placeholder="enter your name" required>
+                        </div><br>
+                        <div>
+                            <label for="E-mail">E-mail :</label>
+                            <input type="email" id="E-mail" placeholder="enter your E-mail" required>
+                        </div><br>
+                        <div>
+                            <label for="Password">Password :</label>
+                            <input type="password" id="password" placeholder="enter your password" minlength="8"
+                                required>
+                        </div><br>
+                        <div>
+                            <label for="birthdate">Birthdate :</label>
+                            <input type="date" id="date" name="date" required>
+                        </div><br>
+                        <div>
+                            <label for="">Gender:</label>
+                            <label for="">Male</label>
+                            <input type="radio" id="Male" name="Gender" value="Male">
+
+                            <label for="">Female</label>
+                            <input type="radio" id="Female" name="Gender" value="Female">
+
+                            <label for="">Others</label>
+                            <input type="radio" id="Others" name="Gender" value="Others">
+                        </div><br>
+                        <div>
+                            <label for="subject">Subject :</label>
+                            <select name="subject" id="subject">
+                                <option value="">Select your subject</option>
+                                <option value="C">C</option>
+                                <option value="C++">C++</option>
+                                <option value="CSS">CSS</option>
+                                <option value="JAVA">JAVA</option>
+                                <option value="HTML">HTML</option>
+                                <option value="PYTHON">PYTHON</option>
+                                <option value="JAVASCRIPT">JAVASCRIPT</option>
+                            </select>
+
+                        </div><br>
+                        <div>
+                            <label for="Price">Price :</label>
+                            <input type="range" id="Price" min="10" max="100" value="80" required>
+                        </div><br>
+                        <div>
+                            <label for="Theme">Theme :</label>
+                            <label for="Theme"><span style="color: blue; font-weight: bold;">Blue</span></label>
+                            <input type="radio" id="Blue" name="Theme">
+                            <label for="Theme"><span style="color: white; font-weight: bold;">White</span></label>
+                            <input type="radio" id="White" name="Theme">
+                            <label for="Theme"><span style="color: black; font-weight: bold;">Black</span></label>
+                            <input type="radio" id="Black" name="Theme">
+                        </div><br>
+                        <div>
+                            <label for="Phone">Phone :</label>
+                            <input type="phone" id="Phone" placeholder="enter your phone number">
+                        </div><br>
+                        <div>
+                            <label for="date-and-time">Date & Time :</label>
+                            <input type="datetime-local" id="date-and-time" required>
+                        </div><br>
+                        <div>
+                            <label for="">Interests :</label>
+                            <label for="Coding">Coding</label>
+                            <input type="checkbox" id="Coding" name="Interests">
+                            <label for="Reading">Reading</label>
+                            <input type="checkbox" id="Reading" name="Interests">
+                            <label for="Games">Games</label>
+                            <input type="checkbox" id="Games" name="Interests">
+                            <label for="Movies">Movies</label>
+                            <input type="checkbox" id="Movies" name="Interests">
+                        </div><br>
+                        <div>
+                            <label for="Files">Files: <img width="40px"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Tdn9veSYHblGrZyDcANqgHLaeVjw_ll-4eXxQdj9xY9rdRXrUfXaIiSMDXn74CCTDW8&usqp=CAU"
+                                    alt="file image"></label>
+                            <input accept=".jpeg, .pdf, .png, .jpg" type="file" id="Files">
+                        </div><br>
+                        <div>
+                            <p>Write something</p><br>
+                            <textarea name="feedback" id="feedback">Text goes here......</textarea>
+                        </div><br>
+                        <div class="button-container">
+                            <input type="submit" value="submit" class="button">
+                            <input type="reset" value="reset" class="button">
+                        </div>
+                </form>
+                </fieldset>
+            </section>
+        </div>
+        <div class="child-footer">
+            <footer>
+                <p>&copy; copywrite @ Abhijith <span>
+                        and designed by Abhijith
+                    </span></p>
+            </footer>
+        </div>
+    </div>
+    
+</body>
+</html>

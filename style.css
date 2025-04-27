@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color:aliceblue;
+}
+.header-container{
+    background-color:rgb(13, 139, 249);
+    padding: 3rem;
+}
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 0;
+    font-weight: 800;
+    transition: text-shadow 0.4s ease;
+}
+.header-title:hover{
+    text-shadow: 0 0 10px #00f, 0 0 20px #00f;
+}
+
+header {
+    align-items: center;
+    padding: 2rem;
+    padding-bottom: 2rem;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: 1em;
+    padding: 0;
+}
+
+.header-link {
+    font-size: var(--size-xs);
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(70, 78, 86);
+    transition: color 0.3s;
+    ;
+}
+
+.header-link:hover {
+    color: rgb(219, 224, 228);
+}
+
+img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.child-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;      
+}
+iframe:hover{
+    width: 80%;
+    
+}
+.about-para {
+    font-size: medium;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    transition: text-shadow 0.4s ease;
+}
+.about-para:hover{
+    text-shadow:
+    0 0 2px #fff,  /* soft white glow */
+    0 0 5px #fff, 
+    0 0 8px #00f, /* stronger blue glow */
+    0 0 10px #00f;
+}
+
+.projects{
+    display: block;
+    align-items: center;
+}
+
+.project-link{
+    transition: color 0.3s;
+    text-decoration: none;
+}
+.project-link:hover{
+    color: rgb(199, 17, 17);
+    font-weight: 600;
+    
+}
+
+.contact{
+    background-color: rgb(197, 206, 213);
+    color: black;
+    border-radius: 20px;
+    padding: 1rem;
+    padding-bottom: auto;
+    font-weight:bold;
+    width: auto;
+}
+
+.button{
+    background-color: blue;
+    border-radius: 5px;
+    border-color: blue;
+    color: white;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+.child-footer{
+    background-color: rgb(13, 139, 249);
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: medium;
+    color: rgb(49, 46, 46);
+}
+
+
+@media (max-width: 768px) {
+    .header-menu {
+        flex-direction: column;
+        align-items: last baseline;
+        font-size: small;
+    }
+    .header-container{
+        padding: 1rem;
+    }
+
+    .header-title {
+        font-size: large;
+    }
+    img{
+        display: block;
+        max-width: 100%;
+    }
+    .about-para{
+        font-size: small;
+    }
+    .child-section{
+        flex-direction: row;
+        font-size: small;
+        justify-content: center;
+        margin: 1rem;
+        font-weight: 500;
+        display: block;
+    }
+    .child-footer{
+        font-size: small;
+    }
+    
+
+
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header-menu {
+        flex-direction: row;
+        align-items: last baseline;
+        font-size: medium;
+    }
+    .header-container{
+        padding: 1.5rem;
+    }
+
+    .header-title {
+        font-size: large;
+    }
+    img{
+        display: block;
+        max-width: 100%;
+    }
+    .about-para{
+        font-size: medium;
+    }
+    .child-section{
+        flex-direction: row;
+        font-size: medium;
+        justify-content: center;
+        margin: 1rem;
+        font-weight: 500;
+        display: block;
+    }
+    .child-footer{
+        font-size: small;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .header-menu {
+        align-items: last baseline;
+        font-size: medium;
+    }
+    .header-container{
+        padding: 2rem;
+    }
+
+    .header-title {
+        font-size: larger;
+    }
+    img{
+        max-width: 100%;
+    }
+    .about-para{
+        font-size: medium;
+    }
+    .child-section{
+        flex-direction: row;
+        font-size: medium;
+        justify-content: center;
+        margin: 2rem;
+        font-weight: 500;
+    }
+    .child-footer{
+        font-size: medium;
+    }
+  }
